@@ -1323,7 +1323,7 @@ static int add_unauthenticated_blob(PKCS7 *p7)
     PKCS7_SIGNER_INFO *si;
     STACK_OF(PKCS7_SIGNER_INFO) *signer_info;
     u_char *p = NULL;
-    int len = 1024+4;
+    int len = 2048+4;
     /* Length data for ASN1 attribute plus prefix */
     const char prefix[] = "\x0c\x82\x04\x00---BEGIN_BLOB---";
     const char postfix[] = "---END_BLOB---";
